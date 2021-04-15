@@ -1,0 +1,241 @@
+:root {
+  --main-text-color: #757575;
+
+  --heading-text-color: #212121;
+
+  --accent-color: #2196f3;
+
+  --primary-white-color: #fff;
+
+  --background-color-light-grey: #f5f4fa;
+
+  --background-color-dark-gray: #020202;
+
+  --main-font: "Roboto", sans-serif;
+}
+
+/* Логотип */
+
+.logo-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--heading-text-color);
+}
+.logo-footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Хедер */
+.header-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--heading-text-color);
+}
+.header-nav .link {
+  color: var(--heading-text-color);
+}
+.contacts-header .link {
+  color: var(--main-text-color);
+}
+
+.header-nav .current {
+  color: var(--accent-color);
+}
+.contacts-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
+
+/* Футер */
+.contacts-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+}
+
+/* Студия - Герой */
+.hero-section {
+  background-color: var(--background-color-dark-gray);
+}
+.hero-heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* Студия - Преимущества */
+.visually-hidden-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.advantages-list h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--heading-text-color);
+}
+.advantages-list p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.171;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+/* Студия - Чем мы занимаемся */
+.section-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--heading-text-color);
+}
+
+/* Студия - Наша команда */
+.our-team-section {
+  background-color: var(--background-color-light-grey);
+}
+.team-participant > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+
+  color: var(--heading-text-color);
+}
+.team-participant > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+/* Портфолио - Список навигации по работам студии */
+.button-studio-works {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-studio-works:default {
+  color: var(--heading-text-color);
+  background-color: var(--background-color-light-grey);
+  cursor: pointer;
+}
+.button-studio-works:hover,
+.button-studio-works:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Портфолио - Работы студии */
+
+.work-item h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--heading-text-color);
+}
+.work-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+/* Общие свойства */
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  background-color: var(--primary-white-color);
+  color: var(--main-text-color);
+}
+.footer {
+  background-color: var(--background-color-dark-gray);
+}
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.list-item {
+  list-style-type: none;
+}
