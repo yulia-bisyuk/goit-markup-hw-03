@@ -226,8 +226,8 @@ img {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-top: -30px;
+  margin-right: (-1 * var(--card-items-gap));
+  margin-top: (-1 * var(--card-items-gap));
 }
 .advantages-list .list-item {
   margin-top: var(--card-items-gap);
@@ -267,25 +267,25 @@ img {
 /* Студия - Чем мы занимаемся */
 
 .what-we-do-item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-items-gap);
+  margin-left: var(--card-items-gap);
   flex-basis: calc((100% - 90px) / 3);
 }
 .card-set.what-we-do {
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: (-1 * var(--card-items-gap));
+  margin-left: (-1 * var(--card-items-gap));
 }
 
 /* Студия - Наша команда */
 
 .section.our-team {
   background-color: var(--background-color-light-grey);
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: (-1 * var(--card-items-gap));
+  margin-left: (-1 * var(--card-items-gap));
 }
 .list-item.team-participant {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-items-gap);
+  margin-left: var(--card-items-gap);
   flex-basis: calc((100% - 120px) / 4);
   background-color: var(--primary-white-color);
   border-radius: var(--corner-radius);
@@ -349,6 +349,11 @@ img {
 
 /* Портфолио - Работы студии */
 
+.studio-work-item-description {
+  padding: 20px 24px;
+  border: 1px solid #eeee;
+}
+
 .studio-work-item h2 {
   font-weight: 700;
   font-size: 18px;
@@ -356,6 +361,7 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--heading-text-color);
+  margin-bottom: 4px;
 }
 .studio-work-item p {
   font-weight: 400;
@@ -364,10 +370,17 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
+  margin-bottom: 0;
 }
-.list-item .studio-work-item {
-  margin-top: ;
-  margin-left: ;
+.studio-work-item {
+  margin-top: var(--card-items-gap);
+  margin-left: var(--card-items-gap);
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.card-set .studio-works {
+  margin-top: (-1 * var(--card-items-gap));
+  margin-left: (-1 * var(--card-items-gap));
 }
 
 /* Футер */
