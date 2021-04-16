@@ -352,8 +352,16 @@ img {
 .studio-work-item-description {
   padding: 20px 24px;
   border: 1px solid #eeee;
-}
 
+  flex-grow: 1;
+}
+.studio-work-item .link {
+  display: flex;
+  flex-direction: column;
+}
+.studio-work-item {
+  display: flex;
+}
 .studio-work-item h2 {
   font-weight: 700;
   font-size: 18px;
@@ -372,16 +380,25 @@ img {
   color: var(--main-text-color);
   margin-bottom: 0;
 }
-.studio-work-item {
+/* для сітки по формулі */
+.list-item.studio-work-item {
   margin-top: var(--card-items-gap);
   margin-left: var(--card-items-gap);
   flex-basis: calc((100% - 90px) / 3);
 }
-
-.card-set .studio-works {
+.card-set.studio-works {
   margin-top: (-1 * var(--card-items-gap));
   margin-left: (-1 * var(--card-items-gap));
 }
+
+/* для сітки без формули */
+/* .studio-work-item {
+  margin-bottom: 30px;
+}
+
+.card-set.studio-works {
+  justify-content: space-between;
+} */
 
 /* Футер */
 
