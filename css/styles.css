@@ -60,9 +60,6 @@ img {
   margin-left: auto;
 }
 
-.footer {
-  background-color: var(--background-color-dark-gray);
-}
 .link {
   text-decoration: none;
 }
@@ -119,18 +116,21 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 .logo-accent {
   color: var(--accent-color);
 }
 
 /* Хедер */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -264,13 +264,19 @@ img {
 
 /* Студия - Чем мы занимаемся */
 
+.what-we-do-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
 .card-set.what-we-do {
-  justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 /* Студия - Наша команда */
 
-.our-team {
+.section.our-team {
   background-color: var(--background-color-light-grey);
   margin-top: -30px;
   margin-left: -30px;
@@ -306,6 +312,15 @@ img {
 }
 
 /* Портфолио - Список навигации по работам студии */
+.studio-works-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.studio-works-nav .list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-studio-works {
   font-family: var(--main-font);
   font-weight: 500;
@@ -313,12 +328,17 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-}
-.button-studio-works:default {
+
   color: var(--heading-text-color);
   background-color: var(--background-color-light-grey);
   cursor: pointer;
+
+  border-radius: var(--corner-radius);
+  border-color: transparent;
+
+  padding: 6px 22px;
 }
+
 .button-studio-works:hover,
 .button-studio-works:focus {
   color: #fff;
@@ -346,6 +366,18 @@ img {
 }
 
 /* Футер */
+
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--background-color-dark-gray);
+}
+
+.footer.container {
+  margin-right: auto;
+}
 .contacts-footer {
   font-style: normal;
   font-weight: 400;
@@ -366,4 +398,9 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--primary-white-color);
+  margin-bottom: 9px;
+}
+
+.contacts-footer .list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
