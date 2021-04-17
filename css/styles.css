@@ -356,16 +356,8 @@ img {
 .studio-work-item-description {
   padding: 20px 24px;
   border: 1px solid #eeee;
+}
 
-  /* flex-grow: 1; */
-}
-.studio-work-item .link {
-  /* display: flex;
-  flex-direction: column; */
-}
-.studio-work-item {
-  /* display: flex; */
-}
 .studio-work-item h2 {
   font-weight: 700;
   font-size: 18px;
