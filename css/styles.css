@@ -118,6 +118,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+
+  display: inline-block;
   margin-bottom: 20px;
 }
 .logo-accent {
@@ -188,6 +190,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-heading {
   font-weight: 900;
@@ -226,12 +230,12 @@ img {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: (-1 * var(--card-items-gap));
-  margin-top: (-1 * var(--card-items-gap));
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .advantages-list .list-item {
   margin-top: var(--card-items-gap);
-  margin-right: var(--card-items-gap);
+  margin-left: var(--card-items-gap);
   flex-basis: calc((100% - 120px) / 4);
 }
 
@@ -258,7 +262,7 @@ img {
 .advantages-list p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.171;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
@@ -272,16 +276,16 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 .card-set.what-we-do {
-  margin-top: (-1 * var(--card-items-gap));
-  margin-left: (-1 * var(--card-items-gap));
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 /* Студия - Наша команда */
 
 .section.our-team {
   background-color: var(--background-color-light-grey);
-  margin-top: (-1 * var(--card-items-gap));
-  margin-left: (-1 * var(--card-items-gap));
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .list-item.team-participant {
   margin-top: var(--card-items-gap);
@@ -353,14 +357,14 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeee;
 
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 .studio-work-item .link {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .studio-work-item {
-  display: flex;
+  /* display: flex; */
 }
 .studio-work-item h2 {
   font-weight: 700;
@@ -387,8 +391,8 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 .card-set.studio-works {
-  margin-top: (-1 * var(--card-items-gap));
-  margin-left: (-1 * var(--card-items-gap));
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 /* для сітки без формули */
