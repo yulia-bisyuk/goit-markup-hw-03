@@ -284,6 +284,8 @@ img {
 
 .section.our-team {
   background-color: var(--background-color-light-grey);
+}
+.card-set.our-team {
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -291,6 +293,7 @@ img {
   margin-top: var(--card-items-gap);
   margin-left: var(--card-items-gap);
   flex-basis: calc((100% - 120px) / 4);
+
   background-color: var(--primary-white-color);
   border-radius: var(--corner-radius);
 }
